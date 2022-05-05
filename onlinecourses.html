@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel = "icon" href = 
+"https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico" 
+        type = "image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <style>
+        *{
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        }
+        #blankspace{
+    
+            width: 100%;
+            height: 30px;
+        }
+        #onc_top{
+            background-image: url("https://assets.interntheory.com/creative/courses/listpage/Course-bannerbg.jpg");
+            background-size: cover;
+            /* background-color: teal; */
+            width: 100%;
+            margin-left: -10px;
+            padding: 1%;
+        }
+        #top_image{
+            width: 94%;
+            height: 250px;
+            margin-left: 50px;
+            margin-right: 50px;   
+        }
+        #onc_certified{
+           width: 85%;
+           height: 100px;
+           /* border: 1px solid black; */
+           margin-left: 10%;
+           margin-top: 3%;
+        }
+        #onc_certified>h2{
+            color: rgba(0, 0, 0, 0.54);
+            font-weight: 400;
+            line-height: 1.75;
+            letter-spacing: 0.00938em;
+            margin-bottom: 20px;
+            
+
+            
+           
+        }
+        #onc_certified p{
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.54);
+        }
+        .div1 p{
+            line-height: 20px;
+            text-align: center;
+            font-size: small;
+            color: rgba(0, 0, 0, 0.54);
+            margin: 0px 5px;
+        }
+        #onc_main{
+            margin: auto;
+            width: 90%;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(4,23%);  
+            grid-gap: 2%;
+            height: 1100px; 
+            margin-left: 8%;
+           
+        }
+        #onc_main>div{
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            height: 335px;
+            border-radius: 10px;
+            /* border: 2px solid red; */
+            padding-bottom: 70px;
+            
+
+        }
+        #onc_main>h4,p{
+            line-height: 15px;
+            margin-top: -5px;
+            
+        }
+        .div2{
+
+            display: flex;
+            margin-left: 50%;
+            margin-top: 10px;
+        }
+        .div1{
+        margin-top: -20px;
+        }
+        .div1>p{
+            margin-top: -15px;
+        }
+        .images{
+            width: 100%;
+            height: 40%;
+        }
+        .strikethrough_Price{
+            text-decoration: line-through;
+            font-size: small;
+        }
+        .Price{
+            font-size: large;
+            font-weight: 800;
+            margin-left: 10px;
+            color: black;
+        }
+        .emi{
+            color: rgb(255,179,38);
+            margin-top: -10px;
+            margin-left: 55px;
+        }
+        .know{
+            width: 40%;
+            color: rgb(78, 162, 218);
+           background: none;
+           border: none;
+           font-weight: bold;
+           border-radius: 5px;
+        }
+        .know:hover{
+            cursor: pointer;
+            background-color: rgb(224, 243, 255);
+
+        }
+        .div3{
+            margin-top: -12px;
+        }
+        .div4{
+            display: flex;
+            justify-content: end;
+            margin-right: 5px;
+           
+        }
+      .btn{
+          background-color: rgb(187, 35, 35);
+            color: white;
+            font-weight: 600;
+            padding: 8px;
+            border: 0;
+            border-radius: 5px;
+      }
+      .btn:hover{
+        background-color:rgb(126, 19, 19) ;
+        cursor: pointer;
+      }
+      #firstcourse{
+          background-color:rgb(223,30,46) ;
+          /* position: fixed; */
+          text-align: center;
+          height: 30px;
+          margin: auto;
+          position:sticky ;
+           bottom:0;
+           margin-top: 180px;
+      }
+      #firstcourse>p{
+        padding-top: 7px;
+        color: white;
+      }
+      .cart_symbol{
+          height: 55px;
+      }
+
+    h2{
+        color:aliceblue
+    }
+    a{
+    text-decoration: none;
+}
+
+  /* navbar styling starting */
+    
+  #navbar{
+    width: 101%;
+    height: 50px;
+    
+    position: fixed;
+    display: flex;
+    margin-left: -15px;
+    
+    margin-top: -22px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    
+    z-index: 1;
+ 
+   
+}
+#navbar a{
+    text-decoration: none;
+}
+#optionIcon{
+    width: 20px;
+    height: 20px;
+    padding: 10px 10px;
+    margin: 5px 10px;
+    opacity: 60%;
+
+}
+
+#optionIcon:hover{
+
+    background-color: rgb(221, 218, 218);
+    border-radius: 50%;
+}
+#internIcon{
+    width: 70px;
+    height: 35px;
+    padding: 7px;
+}
+#cardicon{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 75%;
+    margin-right: 2%;
+    
+}
+#carticon2{
+    margin-left: 75%;
+    margin-right: 2%;
+}
+#cardicon:hover{
+
+    background-color: rgb(221, 218, 218);
+    border-radius: 50%;
+    
+
+}
+#cartcount{
+    color: white;
+    background-color: #df1e2e;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    margin-left: -15px;
+    margin-top: 5px;
+    
+    
+}
+#signinicon{
+    color: white;
+    background-color: #df1e2e;
+    height: 20px;
+    font-size: 13px;
+    padding:  7px 10px;
+    border-radius: 3px;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 2%;
+    
+
+}
+#signinicon:hover{
+    background-color: #85050f;
+}
+#SearchBackground{
+    background-image: url("https://assets.interntheory.com/creative/Homepage-Banner.png");
+    background-size: 100%;
+    
+    width: 101%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: -8px;
+    min-height: 60vh;
+    
+}
+/* navbar styling end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling for footer */
+#myfooter{
+    width: 92%;
+    height: 290px;
+    margin-left: -10px;
+    padding-left: 9%;
+    background-color: #446478;
+    margin-bottom: -10px;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    
+   
+    
+
+}
+#myfooter p{
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.01071em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 13PX;
+}
+
+#myfooter a{
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.01071em;
+    
+}
+li{
+    list-style: none;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+.myhr{
+    height: 1px;
+    margin: 0;
+    border: none;
+    flex-shrink: 0;
+    background-color: #999;
+}
+#onelinetexts{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 9%;
+
+
+}
+#onelinetexts p{
+    font-size: 5px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.01071em;
+    margin-left: 40px;
+    text-align: center;
+    
+}
+#onelinetexts a{
+    text-decoration: none;
+}
+#seperaterline{
+    width: 80%;
+    margin: 0px 10%;
+    border-top: 1px solid rgb(180, 180, 180);
+    margin-top: -10px;
+}
+#copyrighttext{
+    text-align: center;
+    font-size: 5px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.01071em;
+    margin-left: 40px;
+    text-align: center;
+    margin-top: -12px;
+    border: 0px;
+}
+
+
+
+/* styling For Sidebar */
+
+#sidebar_container{
+    display: none;
+    
+}
+#overallpage{
+    height: 100%;
+    width: 100.1%;
+    margin-left: -10px;
+    position: fixed;
+    background-color: rgba(15, 3, 3, 0);
+    top: 0;
+    display: flex;
+    
+}
+#leftSidebar{
+    background-color: white;
+    height: 100%;
+    width: 16%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+#leftSidebar a{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-decoration: none;
+    color: #212121;
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    justify-content: flex-start;
+    text-decoration: none;
+    user-select: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.5em;
+    border-radius: 0;
+    vertical-align: middle;
+    text-transform: none;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.mysideicons{
+    width: 15px;
+    margin: 0px 20px 0px 0px;
+   
+}
+.Mysideoptions:hover{
+    background-color: rgb(216, 214, 214);
+
+
+}
+#optionforcloseside{
+    width: 84%;
+    height: 100%;
+   
+    background-color: rgba(15, 3, 3, 0);
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+   
+    <div id="onc_container">
+        
+        <div id="onc_top">
+            
+            <div id="navbar-container"><div id="navbar">
+
+                <img id="optionIcon" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="">
+            
+            
+                <img id="internIcon" src="data:image/png;base64,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" alt="">
+            
+                <a href="cartPage1.html" id=carticon2><img id="cardicon" src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-shopping-cart_90604.png" alt=""></a>
+                <div id="cartcount">0</div>
+            
+                <a id="signinicon" href="Login.html"><div>SIGN IN</div></a>
+            
+            
+            </div></div>
+           
+            <img id="top_image" src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png" alt="topimg">
+        </div>
+        <div id="onc_certified">
+            <h2>Certified Online Courses</h2>
+            <p>Upgrade your skills with Intern Theory's online learning platform. Enrol for any certified online courses and get a step ahead of competition. Select from a range of skill based online courses and kickstart your career.</p>
+        </div>
+
+        <div id="blankspace"></div>
+        <div id="onc_main">
+
+        </div>
+    </div>
+    <div id="firstcourse">
+        <p>Use Coupon Code <a> FIRSTCOURSE</a> to avail a discount of 20% on your course enrolment.<a></a></p>
+    </div>
+    <div id="footerContainer"></div>
+    </div>
+    <div id="sidebar_container" >
+        <div id="overallpage">
+            <div id="leftSidebar">
+                <div style="margin-top: 50px;" class="Mysideoptions"><a href=""><svg class="mysideicons" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg>Home</a></div>
+    
+    
+                <div class="Mysideoptions"><a href="internship.html"><svg class="mysideicons" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg>Internship <img src="" alt=""></a></div>
+    
+    
+    
+                <div class="Mysideoptions"><a href="internship.html"><svg class="mysideicons" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"></path></svg>Jobs</a></div>
+    
+    
+                <div class="Mysideoptions"><a href="internship.html"><svg class="mysideicons" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path></svg>Post Intership</a></div>
+    
+                <div class="Mysideoptions"><a href="onlinecourses.html"><svg class="mysideicons" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"></path></svg>Courses</a></div>
+    
+    
+                <div class="Mysideoptions"><a href=""><svg class="mysideicons" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"></path></svg>Constract Us</a></div>
+    
+                <hr>
+                <div class="Mysideoptions"><a href="register.html"><svg class="mysideicons" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z"></path><path fill="none" d="M0 0h24v24H0V0z"></path></svg>Register</a></div>
+    
+    
+                <div class="Mysideoptions"><a href="Login.html"><svg class="mysideicons" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M14 6v15H3v-2h2V3h9v1h5v15h2v2h-4V6h-3zm-4 5v2h2v-2h-2z"></path></svg>Login</a></div>
+    
+            </div>
+            <div id="optionforcloseside"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="module">
+
+let OnlineData=[
+    {images:"https://assets.interntheory.com/creative/courses/thumbnails/it.jpg",
+    title:"IT Starter Pack (4 Courses)",description:"Learn the most demanded skills in the IT industry today. Sig ...",
+    strikethrough_Price:"₹ 32999",Price:15999,know:"KNOW MORE",emi:"EMI Starting at ₹ 915/month"},
+    {images:"https://assets.interntheory.com/creative/courses/thumbnails/finthumbnail.jpg",title:"Finance Starter Pack",description:"Learn the most demanded skills in the Finance industry today ...",strikethrough_Price:"₹ 23999",Price:11999,know:"KNOW MORE",emi:"EMI Starting at ₹ 687/month",incart:0},
+    {images:"https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png",title:"Digital Marketing Course",description:"Learn the art of digital marketing. Sign up for this...",strikethrough_Price:"₹ 11999",Price:5999,know:"KNOW MORE",emi:"EMI Starting at ₹ 343/month",incart:0},
+    {images:"https://assets.interntheory.com/creative/courses/thumbnails/stock-market-course.png",title:"Stock Market Course",description:"Learn how to trade and invest in stock markets. Enrol for th ...",strikethrough_Price:"₹ 11999",Price:5999,know:"KNOW MORE",emi:"EMI Starting at ₹ 343/month"},
+    {images:"https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png",title:"Data Analytics Course",description:"Learn data science online. Join this online data analytics c ...",strikethrough_Price:"₹ 11999",Price:5999,know:"KNOW MORE",emi:"EMI Starting at ₹ 343/month",incart:0},
+    {images:"https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png",title:"Web Development Course",description:"Learn the art of web design and web development. Join this o ...",strikethrough_Price:"₹ 7999",Price:3999,know:"KNOW MORE",emi:"EMI Starting at ₹ 229/month"},
+    {images:"https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png",title:"Tally + GST Course",description:"Sign up for this online tally and gst course and learn how t ...",strikethrough_Price:"₹ 7999",Price:3999,know:"KNOW MORE",emi:"EMI Starting at ₹ 229/month"},
+    {images:"https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png",title:"Android App Development",description:"Learn the art of android app design and web development.. ",strikethrough_Price:"₹ 7999",Price:3999,know:"KNOW MORE",emi:"EMI Starting at ₹ 229/month",incart:0},
+    {images:"https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png",title:"Advanced Excel Course",description:"Master MS Excel. Take the online ms excel course and learn t ...",strikethrough_Price:"₹ 5999",Price:2999,know:"KNOW MORE",emi:"EMI Starting at ₹ 172/month",incart:0},
+    {images:"https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png",title:"R Programming Course",description:"Learn r programming online. Sign up for this online r progra ...",strikethrough_Price:"₹ 5999",Price:2999,know:"KNOW MORE",emi:"EMI Starting at ₹ 172/month",incart:0},
+]
+let main=document.getElementById("onc_main");
+
+import {appendOnlineData} from "./CourseData.js"
+
+
+let  appenddata=appendOnlineData(OnlineData,main);
+
+
+let addbuton=document.querySelectorAll(".btn")
+
+// let carts=document.querySelectorAll(".btn")
+
+
+
+for(let i=0;i<addbuton.length;i++){
+
+   addbuton[i].addEventListener("click",()=>{
+    // console.log("added to  cart")
+    cartNumbers(OnlineData[i]);
+    // totalCost(OnlineData[i])
+     
+   })
+}
+
+    function cartNumbers(OnlineData){
+
+       
+       
+        let cart=JSON.parse(localStorage.getItem("cart"));
+       
+        if(!cart){
+             let cart=[];
+             cart.push(OnlineData)
+            localStorage.setItem('cart',JSON.stringify(cart))
+            console.log(cart)
+            refreshcartcount()
+            
+        }else{
+            cart=JSON.parse(localStorage.getItem("cart"));
+            cart.push(OnlineData)
+            localStorage.setItem("cart",JSON.stringify(cart))
+            refreshcartcount()
+            console.log(cart)
+            
+        }
+        
+    }
+    function refreshcartcount(){
+        let arraycart=JSON.parse(localStorage.getItem("cart"));
+        if(arraycart==null){
+            let cartcount=0;
+            document.getElementById("cartcount").textContent=cartcount
+        }
+        else{
+            let cartcount=arraycart.length;
+        console.log(cartcount)
+        document.getElementById("cartcount").textContent=cartcount
+        }
+       
+    }
+    refreshcartcount()
+
+    
+
+import { footer } from "./Components/footer_ayaz.js";
+document.querySelector("#footerContainer").innerHTML= footer()
+
+
+
+document.querySelector("#optionIcon").addEventListener("click",opensideBar)
+function opensideBar(){
+
+   var sidebar= document.querySelector("#sidebar_container")
+   sidebar.style.display="flex"
+
+}
+
+
+
+
+
+document.querySelector("#optionforcloseside").addEventListener("click",closesideBar)
+function closesideBar(){
+
+    var sidebar= document.querySelector("#sidebar_container")
+   sidebar.style.display="none"
+   
+}
+ 
+</script>
+

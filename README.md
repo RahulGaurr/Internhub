@@ -5,10 +5,6 @@
 
 This is our Second Project at Masai School,
 
-## Our Project's Deploy Link :)
-
-### https://intern-theory-group-project-main.vercel.app//
-
 ## Project Description:
 
 ### We are from the ft-web15 batch of Masai School, our task is to make a clone of the Intern Theory website.
@@ -22,9 +18,9 @@ Intern theory website provides an opportunity to get an internship with a handso
 4. LOCALSTORAGE.
 
 ### Team Members:
-1. Ayaz Ahmad
+1.  Rahul Gaur
 2. Umesh Yadav
-3. Rahul Gaur
+3. Ayaz Ahmad
 
 
 

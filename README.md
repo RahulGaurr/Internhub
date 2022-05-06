@@ -1,15 +1,8 @@
-# InternTheory_Group_Project_Main
 
-
-## Clone_Intern Theory 
-
-This is our Second Project at Masai School,
 
 ## Project Description:
 
-### We are from the ft-web15 batch of Masai School, our task is to make a clone of the Intern Theory website.
-
-Intern theory website provides an opportunity to get an internship with a handsome stipend. it also provides some courses by pursuing you can improve your skills and maybe you will land on a high paying job.
+<h1>Intern theory website provides an opportunity to get an internship with a handsome stipend. it also provides some courses by pursuing you can improve your skills and maybe you will land on a high paying job. </h1>
 
 ## Technologies Used:
 1. Html

@@ -21,7 +21,7 @@
 - Contact Us Page.
 
 
-### Some snapshots of our cloned website are below:
+### Some snapshots of our website are below:
 
 This is the landing page of the website:
 
